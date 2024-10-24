@@ -1,0 +1,6 @@
+(defun c:TEST ()
+  (setq selections_list ( list ))
+  (setq s1 ( ssget ))
+  (append (ssget) selections_list)
+  (princ s1)
+)
