@@ -1,6 +1,7 @@
 (defun c:TEST ()
   (setq selections_list ( list ))
-  (setq s1 ( ssget ))
-  (append (ssget) selections_list)
-  (princ s1)
+  (setq current_selection_first_point ( getpoint ))
+  (setq current_selection_second_point ( getpoint ))
+  (setq selections_list ( append selections_list ( list current_selection_first_point current_selection_second_point)))
+
 )
